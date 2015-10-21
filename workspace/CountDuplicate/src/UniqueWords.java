@@ -1,0 +1,37 @@
+import java.util.HashMap;
+import java.util.StringTokenizer;
+
+public class UniqueWords {
+
+	public static void main(String[] args) {
+		String s= " find find the unique the unique  words in the Sentence";
+		UniqueWords uw = new UniqueWords();
+		uw.unique(s);
+	}
+	
+	public void unique(String s){
+		
+		HashMap<String,Integer> hm = new HashMap<String, Integer>(); 
+		StringTokenizer st = new StringTokenizer(s);
+		
+		while(st.hasMoreTokens()){
+			String ch= st.nextToken().toString();
+			if(hm.containsKey(ch)){
+				hm.put(ch,hm.get(ch)+1);
+			}
+			else{
+				hm.put(ch, 1);			
+		    }
+		}
+			for(String h: hm.keySet() ){			
+				if(hm.get(h) == 1){
+					System.out.println(h + " => " + hm.get(h));
+							
+		    }
+		}
+		
+
+	}
+}
+
+

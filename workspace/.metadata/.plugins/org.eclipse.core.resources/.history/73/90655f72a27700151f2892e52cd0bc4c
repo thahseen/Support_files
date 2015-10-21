@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+
+</head>
+
+<form method = post action = "xmlservletpath">
+ First Name:	<input name = "fName"/>
+ Last Name :	<input name = "lName"/>
+	<input type= "submit">
+</form>
+</body>
+</html>

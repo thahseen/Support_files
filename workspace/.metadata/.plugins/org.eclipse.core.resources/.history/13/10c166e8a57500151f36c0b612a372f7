@@ -1,0 +1,32 @@
+
+
+public class WordCount {
+    public void  sortWord(String s){
+    	int c=0;
+    	int len = s.length();
+        char[] cs = s.toCharArray();
+       
+       
+        for(int i=0;i<len;i++){
+        	cs[i]=s.charAt(i);		
+        	if(cs[i]==' ' && cs[i-1]== ' '|cs[i]==0){
+        		c++;
+        	}
+ 
+        }
+        System.out.println("Therer are "+c+ " words");
+    }
+        
+    	
+    
+	public static void main(String[] args) {
+		
+		String s=" This is a test";
+		WordCount wc = new WordCount();
+		wc.sortWord(s);
+		
+		
+
+	}
+
+}

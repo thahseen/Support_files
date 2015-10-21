@@ -1,0 +1,32 @@
+import java.util.Date;
+
+public class MultiThread implements Runnable{
+	private Thread t;
+	    @Override
+	    public void run() {
+		Date d = new Date();
+		 System.out.println("Thread currently  running is " +  t.getName() );
+	      try {
+	         for(int i = 0; i < 100; i++) {
+	            System.out.println("Thread: " + t.getName()+ "is printing and the date is" +d.getTime());
+	            // Let the thread sleep for a while.
+	            Thread.sleep(50);
+	           }
+	        } catch (InterruptedException e) {
+	         System.out.println("Thread " +  t.getName() + " interrupted.");
+	        }
+	    }
+	    
+	   
+	   
+		
+	 
+	public static void main(String[] args) {
+		
+      Thread t = new Thread();
+      t.start();
+	}	
+		
+}
+
+

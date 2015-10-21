@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+
+public class Anagram  {
+	public void stringAnagram(String s1, String s2){
+		
+		char[] cs1 =s1.toCharArray();
+		char[] cs2= s2.toCharArray();
+		Arrays.sort(cs1);
+		Arrays.sort(cs2);
+		boolean res= Arrays.equals(cs1,cs2);
+		if (res==true){System.out.println("The strings are anagram");}
+		else
+		System.out.println("They are not anagram");
+		
+		
+	}
+
+	public static void main(String[] args) {
+		String s1= "apple";
+		String s2= "elapp";
+		Anagram a = new Anagram();
+		a.stringAnagram(s1,s2);
+
+	}
+
+	
+
+}

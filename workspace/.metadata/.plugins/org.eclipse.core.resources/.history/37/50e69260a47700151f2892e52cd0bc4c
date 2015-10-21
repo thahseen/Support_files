@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+
+</head>
+
+<form method = post action = "xmlservletpath">
+ First Name:	<input name = "fName"/><br><br>
+ Last Name :	<input name = "lName"/><br><br>
+ Profession:    <input name ="prof" value= "Developer" type = "radio">Developer<br><br>
+ 			    <input name ="prof" value= "Tester" type = "radio">Tester<br><br>
+ Location :	    <select name  ="location" multiple size =2 >
+ 			    	<option value = " Bangalore">Bangalore</option>
+ 			    	<option value = " Washington D.C">WashingtonD.C</option>
+ 			    	<option value = " New York">New York</option>
+ 			    	<option value = " SFO">SFO</option>
+ 			    	<option value = " Miami">Miami</option>
+ 			    </select>
+	<input type= "submit">
+</form>
+</body>
+</html>

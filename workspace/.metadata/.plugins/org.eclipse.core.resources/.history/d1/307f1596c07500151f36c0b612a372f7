@@ -1,0 +1,16 @@
+import java.util.HashMap;
+import java.util.StringTokenizer;
+
+public class UniqueWords {
+
+	public static void main(String[] args) {
+		String s= " Find the unique words in the Sentence";
+		HashMap<String,Integer> hm = new Hashmap<String, Integer>(); 
+		StringTokenizer st = new StringTokenizer("This is a text");
+		while(st.hasMoreTokens()){
+			
+		}
+
+	}
+
+}

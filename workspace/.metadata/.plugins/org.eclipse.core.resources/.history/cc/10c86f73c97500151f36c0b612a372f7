@@ -1,0 +1,20 @@
+import java.util.Date;
+
+public class MultiThread implements Runnable{
+	private Thread t;
+	    @Override
+	    public void run() {
+		Date d = new Date();
+		for(int i=0;i<100;i++){
+			System.out.println(Thread.currentThread().getId() + "is printing and the date is "+d.getTime() );
+		}
+	 }
+	public static void main(String[] args) {
+		
+      Thread t = new Thread();
+      t.start();
+	}	
+		
+}
+
+

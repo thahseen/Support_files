@@ -1,0 +1,46 @@
+package com.thahseen.javabrains;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.ServletConfig;
+
+
+public class MyServlet extends HttpServlet { 
+	private static final long serialVersionUID = 1L;
+     String configParam = null;
+     String contextParam = null;
+     
+   public void init(ServletConfig servletconfig, ServletContext servletcontext) throws ServletException {
+		this.configParam = servletconfig.getInitParameter("configParam");
+		this.contextParam = servletcontext.getInitParameter("contextParam");
+	}
+	
+	public void service(HttpServletRequest request , HttpServletResponse response)throws IOException {
+		
+		
+		System.out.println("The service method is requested");
+		 PrintWriter out = response.getWriter();
+		 out.println("Welcome to the Web Application");
+		 
+		 request.setAttribute("attvalue", "servlet");
+		 String att = (String) request.getAttribute("attvalue");
+		 System.out.println("The value of attribute value = "+att);
+		 
+		 att = getServletContext().getInitParameter("attvalue");
+		 System.out.println("The value of context parameter = "+att);
+		 
+		 att = getServletConfig().getInitParameter("attvalue");
+		 System.out.println("The value of config parameter = "+att);
+		 
+	 }
+	
+  public void destroy(){
+	  
+  }
+}

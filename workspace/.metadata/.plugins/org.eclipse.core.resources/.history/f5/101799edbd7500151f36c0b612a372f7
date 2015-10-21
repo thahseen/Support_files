@@ -1,0 +1,17 @@
+
+public class StringEqual {
+
+		public static void main(String[] args) {
+			 String s1= "This is the word";
+			 String s2= "This is the word";
+			 int res = s1.compareTo(s2);
+			 if(res==0){System.out.println("The Strings are equal");}
+			 else
+				 System.out.println("The strings are not equal");
+
+		}
+
+
+	}
+
+

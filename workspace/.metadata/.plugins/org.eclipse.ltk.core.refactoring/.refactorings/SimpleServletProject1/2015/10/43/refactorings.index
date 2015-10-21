@@ -1,0 +1,16 @@
+1445269188780	Move 'web.xml' to 'lib'
+1445269279053	Move 'web.xml' to 'WEB-INF'
+1445289244524	Delete element
+1445289268151	Move 'web.xml' to 'WebContent'
+1445289319307	Move 'index.html' to 'WebContent'
+1445303387317	Copy file
+1445303442557	Rename resource 'web.xml'
+1445303541476	Rename resource 'web_xxxxx.xml'
+1445352140052	Delete element
+1445352167101	Delete element
+1445363948411	Delete element
+1445364144238	Delete element
+1445364158259	Delete element
+1445364165260	Delete element
+1445394867100	Delete element
+1445396445747	Move 'SimpleForm.html' to 'WebContent'

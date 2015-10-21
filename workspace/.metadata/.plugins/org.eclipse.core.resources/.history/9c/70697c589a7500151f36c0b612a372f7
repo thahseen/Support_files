@@ -1,0 +1,29 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class CharDuplicate {
+
+	
+	public void countSort(String s){
+		char[] cr =s.toCharArray();
+		HashMap<Character,Integer> hm = new HashMap<Character,Integer>();
+		for(Character ch : cr){
+			if(hm.containsKey(ch)){
+				hm.put(ch,hm.get(ch)+1);
+			}
+			hm.put(ch, 1);			
+		}
+		Set<Character> ke = hm.keySet(); 
+		for(Character h: ke ){			
+			if(hm.get(h) > 1){
+				System.out.println(h + " => " + hm.get(h));
+			}			
+		}				
+	}
+	
+	public static void main(String[] args) {
+	 CharDuplicate cd= new CharDuplicate();
+	 cd.countSort("Raseel");
+	}
+}

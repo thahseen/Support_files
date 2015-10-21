@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="US-ASCII">
+
+</head>
+
+<form method = post action = "xmlservletpath">
+ First Name:	<input name = "fName"/>
+ Last Name :	<input name = "lName"/>
+ Profession:    <input name ="prof" value= "Developer" type = "radio">Developer</input><br><br>
+ 			    <input name ="prof" value= "Tester" type = "radio">Tester</input><br><br>
+	<input type= "submit">
+</form>
+</body>
+</html>

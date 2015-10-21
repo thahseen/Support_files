@@ -1,0 +1,22 @@
+package com.thahseen.javalistener;
+
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+
+public class MyServletContextListener implements ServletContextListener {
+
+
+	@Override
+	public void contextInitialized(ServletContextEvent servletContexte) {
+       System.out.println("Servlet Context is inintialized");
+		
+	}
+
+	@Override
+	public void contextDestroyed(ServletContextEvent servletContexte) {
+		 System.out.println("Servlet Context is inintialized");
+		
+	}
+	
+
+}

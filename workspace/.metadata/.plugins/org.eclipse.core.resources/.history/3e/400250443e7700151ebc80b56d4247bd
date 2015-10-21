@@ -1,0 +1,18 @@
+package com.thahseen.javalistener;
+
+import javax.servlet.ServletRequestEvent;
+import javax.servlet.ServletRequestListener;
+
+public class MyServletRequestListener implements ServletRequestListener {
+
+	@Override
+	public void requestInitialized(ServletRequestEvent servletRequeste) {
+		  System.out.println("Servlet Request is inintialized");
+	}
+
+	@Override
+	public void requestDestroyed(ServletRequestEvent servletRequeste) {
+		  System.out.println("Servlet Request is destroyed");
+		
+	}
+}
